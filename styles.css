@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+  font-size: 18px;
+  color: #333;
+}
+
+.graphic {
+  display: flex;
+  justify-content: center;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  row-gap: -10px;
+}
+
+.column img {
+  object-fit: cover;
+  row-gap: -10px;
+  border-radius: 10px;
+  border: 0px solid #ccc;
+  margin: -15px;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.column2 img {
+  object-fit: cover;
+  border-radius: 10px;
+  border: 0px solid #ccc;
+  margin: -15px;
+}
+
+.download-box {
+  margin-top: 20px;
+}
+.download-btn a {
+  text-decoration: none;
+
+  color: white;
+
+  border-radius: 5px; /* Tugma burchaklarini yumshatish */
+  display: inline-block; /* Blok sifatida ko‘rsatish */
+}
+.download-btn a:hover {
+  background-color: #0056b3; /* Sichqoncha ustiga olib kelganda fon rangi */
+}
+
+#download-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#download-btn:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 200px;
+}
+
+.graphic {
+  margin-top: -120px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.pulse-circle {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #00ffcc, transparent);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+.download-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.download-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+#download-btn {
+  background: #ff4b5c;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#download-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 75, 92, 0.7);
+}
+
+.download-box p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.info-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 50%;
+}
+
+.tab {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.tab:hover {
+  transform: translateY(-5px);
+}
+
+.tab h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #ffd700;
+}
+
+.tab p,
+.tab textarea,
+.tab input {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.tab form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tab textarea {
+  resize: none;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.tab input {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.tab button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tab button:hover {
+  background: #218838;
+}
+
+/* Yulduzcha baholash tizimi */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.star {
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.star.active {
+  color: #ffd700;
+}
